@@ -5,6 +5,7 @@ type ImageAssetProps = {
   mediaUrl: string;
   imageHeight?: number;
   imageWidth?: number;
+  placeholder?: string;
 };
 
 const ImageAsset = ({
@@ -12,6 +13,7 @@ const ImageAsset = ({
   mediaUrl,
   imageHeight,
   imageWidth,
+  placeholder,
 }: ImageAssetProps) => {
   return (
     <div>
@@ -20,6 +22,8 @@ const ImageAsset = ({
         src={mediaUrl}
         height={imageHeight || 200}
         width={imageWidth || 200}
+        placeholder={"blur"}
+        blurDataURL={placeholder}
       />
     </div>
   );
