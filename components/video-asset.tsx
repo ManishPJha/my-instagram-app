@@ -2,7 +2,7 @@
 
 import { useLayoutEffect, useRef, useState } from "react";
 
-const VideoView = ({
+const VideoAsset = ({
   feed,
 }: {
   feed: InstagramPost & { placeholder?: string };
@@ -34,4 +34,4 @@ const VideoView = ({
   );
 };
 
-export default VideoView;
+export default VideoAsset;
