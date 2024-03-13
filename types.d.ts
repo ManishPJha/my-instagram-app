@@ -28,6 +28,7 @@ type InstagramPost = {
   permalink: string;
   mediaType: MediaTypes;
   mediaUrl: string;
+  placeholder: string | undefined;
   sizes: MediaSizes<Sizes>;
   caption: string;
   prunedCaption: string;

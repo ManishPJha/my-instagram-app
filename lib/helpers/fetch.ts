@@ -1,4 +1,4 @@
-const fetchApi = (url: string) => {
+const fetchApi = (url: string): Promise<Response> => {
   return new Promise(async (resolve, reject) => {
     const response = await fetch(url);
 
@@ -8,7 +8,7 @@ const fetchApi = (url: string) => {
 
     console.log("is started to fetching ...");
 
-    resolve(response.json());
+    resolve(response);
   });
 };
 
