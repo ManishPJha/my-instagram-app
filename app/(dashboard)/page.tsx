@@ -34,23 +34,23 @@ export default async function Home() {
   );
 }
 
-export const renderInstagramPosts = async (components: InstagramPost) => {
-  const component = {
-    IMAGE: ImageAsset,
-    VIDEO: VideoAsset,
-  };
+// export const renderInstagramPosts = async (components: InstagramPost) => {
+//   const component = {
+//     IMAGE: ImageAsset,
+//     VIDEO: VideoAsset,
+//   };
 
-  const Component = component[components.mediaType];
+//   const Component = component[components.mediaType];
 
-  return (
-    <Component
-      altText={components.caption}
-      feed={components}
-      mediaUrl={components.mediaUrl}
-      imageHeight={200}
-      imageWidth={200}
-      placeholder={components.placeholder}
-      key={components.id}
-    />
-  );
-};
+//   return (
+//     <Component
+//       altText={components.caption}
+//       feed={components}
+//       mediaUrl={components.mediaUrl}
+//       imageHeight={200}
+//       imageWidth={200}
+//       placeholder={components.placeholder}
+//       key={components.id}
+//     />
+//   );
+// };
